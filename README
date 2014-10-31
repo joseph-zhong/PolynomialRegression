@@ -1,0 +1,41 @@
+Matrix.java
+V 1.3
+By Stewart Bracken
+
+Description:
+		 Matrix.java is a command line java program that brings
+	    a rectangular matrix of arbitrary size to it's unique
+		 reduced row echelon form using gaussian elimination.
+		
+Usage:
+   java -jar matrix [-h | -e | -s] [InputFile]
+   -h brings up this help panel.
+   -e puts the input matrix into row echelon form, NOT reduced
+      row echelon form. Keep in mind row echelon form is a
+      non-unique form of a matrix, and may vary by the particular
+      algorithm one uses. On the other hand, reduced row echelon
+      form is unique, and every matrix has one.
+   -s shows every step taken to reduce a matrix.
+
+[InputFile]
+      is a text file that consists of a rectangular matrix of
+      integers of arbitrary size in which each integer is separated
+      by a space and each row is separated by a line break. The input file
+		must have correct formatting or unknown things will happen during
+		this program's operation.
+
+Future releases may include:
+ * Check for validity of input matrix
+ * Solving the matrix (depreciated)
+ * output to a text file (you can always > yourself).
+ * Vectors
+ * Checking for consistency of a system.
+ * Non/Homogoneous systems
+ * Stuff I pick up in my linear algebra class.
+ * ability to input fractions or decimals.
+
+
+Fraction.java - By Diane Kramer, modified by Stewart Bracken. All original
+				    rights to their respective owner.
+				
+Getopt.java V2.0.6 - licenced under GNU Library General Public License.
