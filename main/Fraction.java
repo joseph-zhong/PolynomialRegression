@@ -1,3 +1,4 @@
+package main;
 /**********************************************************
    Fraction.java - a Java representation of a fraction
 
@@ -111,16 +112,17 @@ public class Fraction
     Purpose:         Finds length of specified fraction.
     Created by Stewart Bracken
    **********************************************************/
-   public int length(){
+   public int length()
+   {
       int count = 0; // at least 3 for num, denom, and /
-      boolean negative = false;
+      //boolean negative = false;
       //if (this.numerator<0) negative = true;
       String buffer = Integer.toString(this.numerator);
       count +=buffer.length();
       if (this.denominator != 1) {
          buffer = Integer.toString(this.denominator);
          count +=buffer.length();
-         count++; //acount for /
+         count++; //account for /
       }
       return count;
    }

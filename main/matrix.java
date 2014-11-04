@@ -1,3 +1,4 @@
+package main;
  /**************************************************************************
   * Matrix.java
   * By Stewart Bracken
@@ -14,6 +15,7 @@
   
 import java.util.*;
 import java.io.*;
+
 import static java.lang.System.*;
 
 class matrix{
@@ -42,7 +44,8 @@ class matrix{
    }
     
    // getGrid() will extract integers from input file and put them into a fitting array
-   static Fraction[][] getMatrix ( String filename ){
+   @SuppressWarnings("resource")
+static Fraction[][] getMatrix ( String filename ){
       int rowBuffer = 30;
       int columnBuffer = 30;
       Fraction[][] matrixBuffer = new Fraction[rowBuffer][columnBuffer];
@@ -319,7 +322,8 @@ class matrix{
       System.exit(1);
    }
     
-   public static void main(String[] args){
+   public static void main(String[] args)
+   {
       boolean helpFlag = false;
       
       //Get options using GetOpt.java

@@ -1,3 +1,4 @@
+package main;
 import static java.lang.System.*;
 
 public class coordinate {
